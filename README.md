@@ -1,2 +1,2 @@
 # NatureHolidays
-Nature Holidays - A travel website  
+Nature Holidays - A travel website 🏞️
