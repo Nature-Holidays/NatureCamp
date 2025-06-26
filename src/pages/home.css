@@ -1,0 +1,17 @@
+.contact{
+    background-color: var(--primaryClr);
+    padding: 15px;
+}
+
+.align-items-end{
+    margin :0px 5px;
+}
+
+.text-center Button{
+    background-color: rgb(218, 33, 33);
+    color: white;
+}
+
+.text-center Button :hover{
+    background-color:rgb(183, 19, 19) !important;
+}
