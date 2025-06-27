@@ -28,10 +28,10 @@ export const Banner = () => {
             <Carousel.Caption>
               <div className="slider_des">
                 <h5 className="heading">
-                  Classic & Inviting<span>Reconnect with Nature</span>
+                  Enjoy your Travel and Stay<span>by Exploring Nature</span>
                 </h5>
                 <p className="sub_text">
-                  Escape the noise — camp under the stars, hike wild trails, and rediscover peace.
+                  Reconnect with what's real—nature, peace, and you.
                 </p>
               </div>
             </Carousel.Caption>
