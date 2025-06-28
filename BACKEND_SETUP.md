@@ -37,7 +37,7 @@ python setup.py
 **Important:** After running the script, open the generated `.env` file and update the MongoDB URI:
 
 ```env
-MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/nature_camp?retryWrites=true&w=majority
+MONGO_URI=mongodb+srv://naturecamp_user:<password>@naturecamp.oyvydke.mongodb.net/?retryWrites=true&w=majority&appName=NatureCamp
 ```
 
 ## Step 4: Install Dependencies
