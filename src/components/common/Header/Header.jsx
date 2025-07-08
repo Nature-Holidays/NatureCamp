@@ -56,20 +56,7 @@ function Header() {
                   
                   <NavLink className = 'nav-link' to = '/'>Home</NavLink>
                   <NavLink className = 'nav-link' to = '/packages'>Packages</NavLink>
-
-                  <NavDropdown
-                    title="Destinations"
-                    id={`offcanvasNavbarDropdown-expand-lg`}
-                  >
-                    <NavDropdown.Item href="#action3">Kerala</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">Tamil Nadu</NavDropdown.Item>
-                    
-                    <NavDropdown.Divider />
-                    
-                    <NavDropdown.Item href="#action5">Others</NavDropdown.Item>
-                  </NavDropdown>
-                
-                  <NavLink className = 'nav-link' to = '/gallery'>Gallery</NavLink>
+                  <NavLink className = 'nav-link' to = '/gallery'>Student Tour</NavLink>
                   <NavLink className = 'nav-link' to = '/about-us'>About Us</NavLink>
                 
                 </Nav>
