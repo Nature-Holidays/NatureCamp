@@ -58,7 +58,8 @@ function Header() {
                   <NavLink className = 'nav-link' to = '/packages'>Packages</NavLink>
                   <NavLink className = 'nav-link' to = '/gallery'>Student Tour</NavLink>
                   <NavLink className = 'nav-link' to = '/about-us'>About Us</NavLink>
-                
+                  <NavLink className = 'nav-link' to = '/about-us'>Contact Us</NavLink>
+                  <NavLink className = 'nav-link' to = '/about-us'>Camp Packages</NavLink>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
