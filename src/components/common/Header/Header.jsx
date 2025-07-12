@@ -55,11 +55,17 @@ function Header() {
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   
                   <NavLink className = 'nav-link' to = '/'>Home</NavLink>
-                  <NavLink className = 'nav-link' to = '/packages'>Packages</NavLink>
-                  <NavLink className = 'nav-link' to = '/gallery'>Student Tour</NavLink>
                   <NavLink className = 'nav-link' to = '/about-us'>About Us</NavLink>
-                  <NavLink className = 'nav-link' to = '/about-us'>Contact Us</NavLink>
-                  <NavLink className = 'nav-link' to = '/about-us'>Camp Packages</NavLink>
+                  <NavLink className = 'nav-link' to = '/packages'>Packages</NavLink>
+                  <NavLink className = 'nav-link' to = '/group tours'>Group Tours</NavLink>
+                  <NavLink className = 'nav-link' to = '/contact-us'>Contact Us</NavLink>
+                  <NavLink className = 'nav-link' to = '/gallery'>Gallery</NavLink>
+                  <NavLink 
+                    to='/camp-packages' 
+                    className={({ isActive }) => isActive ? 'nav-link nav-button active' : 'nav-link nav-button'}
+                >
+                  Camp Packages
+                </NavLink>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

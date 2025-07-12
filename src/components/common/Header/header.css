@@ -1,4 +1,4 @@
-
+/* Sticky Header Animation */
 .is-sticky {
   position: fixed;
   top: 0;
@@ -9,6 +9,7 @@
   z-index: 999;
   box-shadow: var(--bs-box-shadow-sm) !important;
 }
+
 @keyframes smothScroll {
   0% {
     transform: translateY(-40px);
@@ -36,35 +37,35 @@ header {
   opacity: 1;
 }
 
-.bg-body-tertiary{
+.bg-body-tertiary {
   background-color: transparent !important;
 }
 
 header .navbar .navbar-brand a {
-    font-size: 22px;
-    color: var(--black) ;
-    line-height: 150%;
-    font-family: var(--fontFamily1);
-    font-weight: bold;
-    text-transform: capitalize;
-    text-decoration: none;
+  font-size: 22px;
+  color: var(--black);
+  line-height: 150%;
+  font-family: var(--fontFamily1);
+  font-weight: bold;
+  text-transform: capitalize;
+  text-decoration: none;
 }
 
 header .navbar .offcanvas-body a {
-    font-size: 14px;
-    color: var(--white);
-    line-height: 150%;
-    font-family: var(--fontFamily);
-    font-weight: bold;
-    text-transform: uppercase;
+  font-size: 14px;
+  color: var(--white);
+  line-height: 150%;
+  font-family: var(--fontFamily);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 header .navbar .offcanvas-body .dropdown-menu a {
-    color:black !important
+  color: black !important;
 }
 
 header .navbar .offcanvas-body a:hover {
-
   color: var(--primaryClr) !important;
 }
 
@@ -75,11 +76,39 @@ header .navbar .offcanvas-body .dropdown-menu {
 header .navbar .offcanvas-body .dropdown-menu .dropdown-item {
   color: var(--black) !important;
 }
+.nav-link.active {
+  color: var(--primaryClr) !important;
+  border-bottom: 2px solid var(--primaryClr);
+}
 
+
+/* 🔹 CAMP PACKAGES as a Button */
+.nav-button {
+  background-color: var(--primaryClr);
+  color: #fff !important;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-button:hover {
+  background-color: #148f77; /* darker shade on hover */
+  color: #fff !important;
+}
+
+.nav-button.active {
+  background-color: #117a65;
+  border: 2px solid #0e6655;
+  color: #fff !important;
+}
+
+/* 🔸 Responsive Styles */
 @media only screen and (max-width: 991px) {
   header .navbar .toggle_btn {
     font-size: var(--bodyText);
-    /* color: var(--white); */
     border: 2px solid var(--white);
     padding: 7px 10px;
   }
@@ -92,7 +121,7 @@ header .navbar .offcanvas-body .dropdown-menu .dropdown-item {
     border: 1px solid gainsboro;
   }
 
-  .offcanvas-header .logo{
+  .offcanvas-header .logo {
     font-size: 26px;
     color: var(--black) !important;
     font-family: var(--fontFamily1);
@@ -102,12 +131,25 @@ header .navbar .offcanvas-body .dropdown-menu .dropdown-item {
 
   .offcanvas-body .nav-link {
     padding: 12px 0px;
-    color:var(--black);
+    color: var(--black);
   }
 
-  .offcanvas-body .dropdown-item{
+  .offcanvas-body .dropdown-item {
     padding: 12px 10px;
-    color:var(--black);
+    color: var(--black);
   }
 
+  /* ✅ Camp Packages button style in mobile view */
+  .offcanvas-body .nav-button {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .offcanvas-body .nav-button.active {
+    background-color: #117a65;
+    border: 2px solid #0e6655;
+    color: #fff !important;
+  }
 }
